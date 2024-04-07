@@ -1,0 +1,137 @@
+body{
+    box-sizing: border-box;
+}
+
+.navigation-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blue;
+    margin: 8px;
+    padding: 10px;
+    max-width: auto;
+}
+
+.navigation-menu .logo{
+    width: 50px;
+    height: 50px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 15em;
+    list-style-type: none;
+    font-size: 50px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.navigation-menu .nav-items > li{
+    color: white;
+    padding-right: 10px;
+}
+
+.Hero-Section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #c7e3ee;
+    height: auto;
+    margin: 10px;
+    position: relative;
+}
+
+.white-building{
+    width: 50%;
+    height: 200%;
+    padding: 20px;
+}
+
+.Hero-Section--Details{
+    margin-left: 10em;
+}
+
+.Welcome-Title{
+    color: navy;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.Welcome-Note{
+    text-align: justify;
+    color: navy;
+    font-size: 2opx;
+    font-weight: 400;
+}
+
+.get-started-button{
+    position: absolute;
+    top: 75%;
+    left: 13%;
+    padding: 15px 80px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: navy;
+    color: white;
+    font-weight: 500;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: auto;
+    margin: 30px 10px;
+}
+
+.Feature-Component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20em;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px 50px;
+}
+
+.feature-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.feature-header{
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 0.6em;
+}
+
+.Testimonials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    margin: 10px;
+}
+
+.testimonial-description{
+    margin-left: 12em;
+}
+
+.Name-Of--Testimonial{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.testimonial-person{
+    width: 30%;
+    height: 60%;
+}

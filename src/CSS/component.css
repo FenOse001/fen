@@ -1,0 +1,21 @@
+.img {
+    width: 15%;
+    height: 15%;
+    margin: 2%;
+    box-shadow: 2px 2px 8px black, 2px 4px 8px black;
+}
+
+#btn {
+    margin-top: 13%;
+    margin-left: 2%;
+    position: fixed;
+}
+
+.container {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    color: blue;
+    font-weight: bold;
+    font-family: sans-serif;
+}
