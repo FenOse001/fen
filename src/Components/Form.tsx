@@ -1,5 +1,7 @@
 //@ts-check
-import { ReactNode, useState } from "react";
+import { MouseEventHandler, ReactNode, useState } from "react";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../CSS/Form.css";
 interface ModalProps {
   isOpen: boolean;
@@ -10,6 +12,12 @@ function Form({ isOpen, onClose }: ModalProps) {
   if (!isOpen) {
     return null;
   }
+
+  const navigate = useNavigate();
+
+  const submitForm = (e: React.FormEvent) => {
+    e.preventDefault();
+  };
 
   return (
     <>
@@ -77,7 +85,13 @@ function Form({ isOpen, onClose }: ModalProps) {
             className="file-input"
           />
         </div>
-        <button className="submit-btn">Sign Up</button>
+        <button
+          className="submit-btn"
+          onSubmit={submitForm}
+          onClick={() => navigate("Dashboard")}
+        >
+          Sign Up
+        </button>
       </form>
     </>
   );
